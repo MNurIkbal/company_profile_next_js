@@ -7,9 +7,8 @@ import abouts from './page/abouts'
 
 export default function Home() {
   return (
-    <Router>
-       <Route exact path="/" component={Navbar} />
-      <Route path="/about" component={abouts} />
-    </Router>
+    <div>
+      error
+    </div>
   )
 }
