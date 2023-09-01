@@ -17,11 +17,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
         <link href="https://fonts.googleapis.com/css2?family=Mandali&display=swap" rel="stylesheet" />
+        <link rel="icon" href="assets/img/logo.png" />
       </head>
-      <body>{children}</body>
+      <body>
+        {children}
+      </body>
     </html>
   )
 }

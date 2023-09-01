@@ -5,3 +5,8 @@
 body {
   font-family: 'mandali',sans-serif;
 }
+
+.w-slider {
+  width: 100% !important;
+  height: 600px !important;
+}
