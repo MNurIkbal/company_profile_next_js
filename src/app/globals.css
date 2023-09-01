@@ -3,10 +3,20 @@
 @tailwind utilities;
 
 body {
-  font-family: 'mandali',sans-serif;
+  font-family: 'mandali',sans-serif !important;
 }
 
 .w-slider {
   width: 100% !important;
   height: 600px !important;
+}
+
+.fon-20 {
+  font-size: 23px !important;
+}
+
+.garis {
+  width: 200px;
+  margin-top: 10px;
+  border: 2px solid rgba(15, 15, 191, 0.677);
 }
