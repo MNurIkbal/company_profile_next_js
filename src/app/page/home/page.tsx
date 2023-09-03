@@ -2,6 +2,8 @@ import { Carausel } from "@/app/components/Carausel"
 import Navbar from "../../components/Navbar"
 import TextCenter from "@/app/components/TextCenter"
 import GridSystem from "@/app/components/GridSystem"
+import ColTwo from "@/app/components/ColTwo"
+
 
 const data_carausel = [
     {
@@ -34,6 +36,14 @@ const data_grid_system = [
     },
 ]
 
+const imgdata = [
+    {
+            img : "/assets/img/img_1.jpg",
+            judul : "Berinovasi lebih banyak agar bisa menjadi peluang di masa depan",
+            deskripsi : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Et molestiae, odio quam fugit similique optio, tempore possimus blanditiis nobis consectetur totam reiciendis adipisci saepe provident, accusantium soluta velit dignissimos pariatur? Maxime quae sequi, optio voluptatum officia laboriosam nostrum animi tempora quo dignissimos deleniti nobis cupiditate minus minima neque voluptas dolor eligendi iusto numquam? Iusto voluptatum ad laborum sit aperiam unde numquam itaque iste nam sint fugit, voluptatibus ullam consequatur non soluta."
+    }
+]
+
 export default function page() {
     return (
         <div>
@@ -42,7 +52,7 @@ export default function page() {
             <TextCenter data={"Tentang Kami"} />
             <div className="ml-5 mt-10 mr-5">
                 <GridSystem data_grid_system={data_grid_system} />
-                
+                <ColTwo data_query={imgdata} />
             </div>
             <br />
             <br />
