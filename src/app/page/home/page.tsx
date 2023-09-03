@@ -15,6 +15,25 @@ const data_carausel = [
     }
 ]
 
+const data_grid_system = [
+    {
+        title : "Biografi",
+        deskripsi : "Biograsi hidup saya ketika saya meniti karir sebagai programmer hebat"
+    },
+    {
+        title : "Pendidikan",
+        deskripsi : "Pendidikan penting bagi saya untuk membuat peluang lebih besar di masa depan"
+    },
+    {
+        title : "Organisasi",
+        deskripsi : "Organiasi yang saya ikuti sekarang menjadi asisten lab di universitas budi luhur"
+    },
+    {
+        title : "Karir",
+        deskripsi : "Programmer adalah cita-cita saya sejak dulu waktu kelas 10 smk"
+    },
+]
+
 export default function page() {
     return (
         <div>
@@ -22,7 +41,8 @@ export default function page() {
             <Carausel query_data={data_carausel} />
             <TextCenter data={"Tentang Kami"} />
             <div className="ml-5 mt-10 mr-5">
-                <GridSystem />
+                <GridSystem data_grid_system={data_grid_system} />
+                
             </div>
             <br />
             <br />

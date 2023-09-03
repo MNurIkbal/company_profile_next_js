@@ -1,17 +1,14 @@
-
-export default function GridSystem() {
-  return (
-    <div className="flex">
-      <div className="w-1/4 p-4">
-        <div className="bg-blue-300 h-20">Kolom 1</div>
-      </div>
-      <div className="w-1/4 p-4">
-        <div className="bg-green-300 h-20">Kolom 2</div>
-      </div>
-      <div className="w-1/4 p-4">
-        <div className="bg-yellow-300 h-20">Kolom 3</div>
-      </div>
-    </div>
-    
-  )
+export default function GridSystem({ data_grid_system }) {
+    return (
+        <div>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 " >
+                {data_grid_system.map((item) => (
+                    <div className="bg-blue-700 p-4  rounded-lg text-white ">
+                        <h3 className="font-bold">{item.title}</h3>
+                        <p>{item.deskripsi}</p>
+                    </div>
+                ))}
+            </div>
+        </div>
+    )
 }
