@@ -1,7 +1,8 @@
 'use client'
-import { Fragment } from 'react'
+import { Fragment, useState } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
+import React, { useEffect } from 'react';
 
 const navigation = [
   { name: 'Home', href: '/', current: true },
@@ -17,10 +18,28 @@ function classNames(...classes) {
 }
 
 export default function Example() {
+  const [scrolled, setScrolled] = useState(false);
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    <Disclosure as="nav" className="bg-white fixed z-10 w-full h-24 flex align-top">
+    <Disclosure as="nav" className="bg-deep-orange-400 {`navbar ${scrolled ? 'scrolled' : ''}`}">
       {({ open }) => (
         <>
+        {console.log(scrolled)}
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
             <div className="relative flex h-16 items-center justify-between">
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">

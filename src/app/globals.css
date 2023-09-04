@@ -21,3 +21,17 @@ body {
   border: 2px solid rgba(15, 15, 191, 0.677);
   
 }
+
+.mt-style {
+  margin-top: 95px;
+}
+
+.navbar {
+  height: 96px; /* Tinggi navbar normal */
+  transition: height 0.3s ease; 
+}
+
+.navbar.scrolled {
+  height: 64px; /* Tinggi navbar saat digulir */
+  background-color: yellow;
+}
