@@ -14,16 +14,14 @@ body {
 .fon-20 {
   font-size: 23px !important;
 }
+.mt-style {
+  margin-top: 95px;
+}
 
 .garis {
   width: 200px;
   margin-top: 10px;
   border: 2px solid rgba(15, 15, 191, 0.677);
-  
-}
-
-.mt-style {
-  margin-top: 95px;
 }
 
 .navbar {
@@ -33,5 +31,51 @@ body {
 
 .navbar.scrolled {
   height: 64px; /* Tinggi navbar saat digulir */
-  background-color: yellow;
+  background-color: white;
+  margin-bottom: 0px !important;
+}
+
+.md-respon {
+  display: flex;
+  align-items: center;
+}
+
+nav .mx-auto .relative {
+  display: flex !important;
+  align-items: center !important;
+}
+
+nav .space-y-1 .text-gray-300 {
+  color: black !important;
+}
+
+nav .space-y-1 .bg-gray-900 {
+  background-color: #1976D2;
+}
+
+nav .space-y-1 {
+  background-color: white !important;
+  color: black !important;
+}
+
+.font-style {
+  font-size: 40px;
+}
+
+.fon-sm {
+  font-size: 20px;
+}
+
+.style-elip {
+  transform: translateX(400px);
+  z-index: -10;
+  transform: translateY(-20px);
+}
+
+@media screen and (max-width:540px) {
+  .md-respon {
+    justify-content: left !important;
+    display: block;
+    align-items: center;
+  }
 }

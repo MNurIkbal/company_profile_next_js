@@ -36,7 +36,7 @@ export default function Example() {
   }, []);
 
   return (
-    <Disclosure as="nav" className="bg-deep-orange-400 {`navbar ${scrolled ? 'scrolled' : ''}`}">
+    <Disclosure as="nav" className={`bg-white navbar fixed w-full md-respon box-content shadow-lg z-10 ${scrolled ? 'scrolled' : ''}`}>
       {({ open }) => (
         <>
         {console.log(scrolled)}
