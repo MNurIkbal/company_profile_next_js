@@ -1,5 +1,6 @@
 'use client'
 import Image from 'next/image';
+import { useEffect, useState } from 'react';
 
 import SwiperCore, { Navigation, Pagination, Autoplay } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -9,7 +10,8 @@ import 'swiper/swiper-bundle.css';
 SwiperCore.use([Navigation, Pagination, Autoplay]);
 
 const SwiperComponent = () => {
-    const [first, setfirst] = useState(second)
+    const [normal_slide, ubah_slide] = useState(1); // Default slidesPerView adalah 1
+
 
     const items = [
         {
@@ -63,11 +65,34 @@ const SwiperComponent = () => {
     ];
  
     
-    const slidesPerView = 4;
+    var slidesPerView = 4;
     
 
     // Mengatur jumlah spasi antara item
     const spaceBetween = 4;
+    useEffect(() => {
+        // Fungsi yang akan dijalankan saat komponen pertama kali dimuat dan saat ukuran layar berubah
+        const handleResize = () => {
+          if (window.innerWidth >= 768) {
+            slidesPerView = 4;
+        } else {
+              
+            slidesPerView = 1;
+          }
+        };
+      
+        // Panggil handleResize saat komponen pertama kali dimuat
+        handleResize();
+      
+        // Tambahkan event listener untuk mengubah slidesPerView saat ukuran layar berubah
+        window.addEventListener('resize', handleResize);
+      
+        // Membersihkan event listener saat komponen dibongkar
+        return () => {
+          window.removeEventListener('resize', handleResize);
+        };
+      }, []); // Gunakan array dependencies kosong agar useEffect hanya dijalankan sekali saat komponen pertama kali dimuat
+      
 
     const slideItems = items.map((item) => (
         <SwiperSlide key={item.id}>
