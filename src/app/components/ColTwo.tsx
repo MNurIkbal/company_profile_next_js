@@ -17,8 +17,8 @@ export default function ColTwo({data_query}) {
                     </div>
                 </div>
             ))}
-            <div>
-                <Image src='/assets/img/elip.png' width={50} height={50} className='style-elip' alt='hallo' />
+            <div className='relative'>
+                <Image src='/assets/img/elip.png' width={50} height={50} className='style-elip -z-10 overflow-hidden' alt='hallo' />
             </div>
         </div>
     )
