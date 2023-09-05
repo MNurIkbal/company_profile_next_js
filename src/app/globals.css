@@ -27,18 +27,14 @@ body {
 .navbar {
   height: 96px; /* Tinggi navbar normal */
   transition: height 0.3s ease; 
+  background-color: #2B1851;
 }
 
 .navbar.scrolled {
   height: 64px; /* Tinggi navbar saat digulir */
-  background-color: white;
   margin-bottom: 0px !important;
 }
 
-.md-respon {
-  display: flex;
-  align-items: center;
-}
 
 nav .mx-auto .relative {
   display: flex !important;
@@ -63,6 +59,13 @@ nav .space-y-1 {
   font-size: 40px;
 }
 
+.grid-sistem-navbar {
+  display: grid !important;
+  grid-template-columns: repeat(3,1fr);
+  align-items: center;
+  width: 100%;
+}
+
 .fon-sm {
   font-size: 20px;
 }
@@ -76,11 +79,24 @@ nav .space-y-1 {
 .style-color {
   color: #F76680;
 }
+@media screen and (max-width:700px) {
+  .grid-sistem-navbar {
+    grid-template-columns: repeat(2,1fr) !important;
+  }
+
+  .imgt {
+    display: none !important;
+  }
+}
 
 @media screen and (max-width:540px) {
   .md-respon {
     justify-content: left !important;
     display: block;
     align-items: center;
+  }
+
+  .grid-sistem-navbar {
+    grid-template-columns: repeat(1,1fr) !important;
   }
 }

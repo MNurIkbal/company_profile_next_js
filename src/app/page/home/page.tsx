@@ -57,7 +57,6 @@ export default function page() {
             </div>
                 <ColTwo data_query={imgdata} />
                 <div className="ml-5 mt-10 mr-5">
-                <Swipper />
                 </div>
             <br />
             <br />
