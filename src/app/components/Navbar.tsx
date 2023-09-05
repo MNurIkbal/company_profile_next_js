@@ -56,8 +56,8 @@ export default function Example() {
                 <div className='justify-start imgt'>
                   <Image src='/assets/img/satu.png' width={30} height={30} alt='ok' />
                 </div>
-                <div className='justify-center'>
-                  <div className="hidden sm:ml-6 sm:block">
+                <div className='justify-center  flex items-center'>
+                  <div className="hidden  sm:ml-6 sm:block">
                     <div className="flex space-x-4">
                       {navigation.map((item) => (
                         <a

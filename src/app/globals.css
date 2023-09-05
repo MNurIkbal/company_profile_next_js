@@ -62,7 +62,7 @@ nav .space-y-1 {
 .grid-sistem-navbar {
   display: grid !important;
   grid-template-columns: repeat(3,1fr);
-  align-items: center;
+  align-items: center !important;
   width: 100%;
 }
 
