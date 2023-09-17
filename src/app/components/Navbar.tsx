@@ -36,7 +36,7 @@ export default function Example() {
   }, []);
 
   return (
-    <Disclosure as="nav" className={` navbar fixed w-full  box-content shadow-lg z-50 ${scrolled ? 'scrolled' : ''}`}>
+      <Disclosure as="nav" className={` navbar fixed w-full  box-content shadow-lg z-50 ${scrolled ? 'scrolled' : ''}`}>
       {({ open }) => (
         <>
           <div className='ml-5 mr-5'>
@@ -52,7 +52,7 @@ export default function Example() {
                   )}
                 </Disclosure.Button>
               </div>
-              <div className="grid-sistem-navbar">
+              <div className="grid-sistem-navbar" >
                 <div className='justify-start imgt'>
                   <Image src='/assets/img/satu.png' width={30} height={30} alt='ok' />
                 </div>
@@ -102,6 +102,10 @@ export default function Example() {
         </>
       )}
 
-    </Disclosure>
+    </Disclosure> 
+    
+
+
+    
   )
 }

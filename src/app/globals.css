@@ -62,7 +62,7 @@ nav .space-y-1 {
 .grid-sistem-navbar {
   display: grid !important;
   grid-template-columns: repeat(3,1fr);
-  align-items: center !important;
+  margin-top: 35px;
   width: 100%;
 }
 
@@ -74,6 +74,11 @@ nav .space-y-1 {
   position: absolute;
   left: 200px;
   top: -20px;
+}
+
+.imgt {
+  display: flex;
+  align-items: center !important;
 }
 
 .style-color {
