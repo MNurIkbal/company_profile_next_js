@@ -20,11 +20,9 @@ function classNames(...classes) {
 export default function Example() {
   const [scrolled, setScrolled] = useState(false);
   useEffect(() => {
-    const normal = document.getElementById('normal');
     const handleScroll = () => {
       if (window.scrollY > 50) {
         setScrolled(true);
-        normal.style.marginTop = "10px";
       } else {
         setScrolled(false);
       }
@@ -54,7 +52,7 @@ export default function Example() {
                   )}
                 </Disclosure.Button>
               </div>
-              <div className="grid-sistem-navbar " id='normal'>
+              <div className="grid-sistem-navbar "  style={{ marginTop: scrolled ? '5px' : '35px' }}>
                 <div className='justify-start imgt'>
                   <Image src='/assets/img/satu.png' width={30} height={30} alt='ok' />
                 </div>

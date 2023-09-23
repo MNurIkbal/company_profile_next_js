@@ -62,14 +62,11 @@ nav .space-y-1 {
 .grid-sistem-navbar {
   display: grid !important;
   grid-template-columns: repeat(3,1fr);
-  margin-top: 35px;
+  /* margin-top: 35px; */
   width: 100%;
 }
 
 
-.normal_scroll {
-  margin-top: 10px;
-}
 
 .fon-sm {
   font-size: 20px;
