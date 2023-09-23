@@ -66,6 +66,11 @@ nav .space-y-1 {
   width: 100%;
 }
 
+
+.normal_scroll {
+  margin-top: 10px;
+}
+
 .fon-sm {
   font-size: 20px;
 }
