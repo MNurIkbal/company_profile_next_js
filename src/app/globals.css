@@ -66,8 +66,6 @@ nav .space-y-1 {
   width: 100%;
 }
 
-
-
 .fon-sm {
   font-size: 20px;
 }
@@ -78,9 +76,24 @@ nav .space-y-1 {
   top: -20px;
 }
 
+.welcome {
+  position: relative;
+}
+
 .imgt {
   display: flex;
   align-items: center !important;
+}
+
+.background_before::before {
+  content: "";
+  background-color: #ed0404;
+  width: 300px;
+  height: 100%;
+  position: absolute; 
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 
 .style-color {
@@ -92,6 +105,10 @@ nav .space-y-1 {
   }
 
   .imgt {
+    display: none !important;
+  }
+
+  .relative {
     display: none !important;
   }
 }
