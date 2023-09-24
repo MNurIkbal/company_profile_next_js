@@ -47,7 +47,7 @@ const imgdata = [
 
 const welcome_data = [
     {
-        img: "/assets/img/welcome.png",
+        img: "/assets/img/icon.png",
         judul: "welcome message",
         deskripsi: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
     }
@@ -60,16 +60,16 @@ export default function page() {
             <Carausel query_data={data_carausel} />
             <TextCenter data={"Tentang Kami"} />
             <div className="ml-20 mr-20">
-            <div className="mt-10">
-                <GridSystem data_grid_system={data_grid_system} />
-            </div>
-            <div className="mt-10">
-                <ColTwo data_query={imgdata} />
-            </div>
+                <div className="mt-10">
+                    <GridSystem data_grid_system={data_grid_system} />
+                </div>
+                <div className="mt-10">
+                    <ColTwo data_query={imgdata} />
+                </div>
                 <div className="background_before"></div>
-            <div className="welcome">
-                <ColTwo data_query={welcome_data} />
-            </div>
+                <div className="welcome">
+                    <ColTwo data_query={welcome_data} />
+                </div>
             </div>
             <br />
             <br />
