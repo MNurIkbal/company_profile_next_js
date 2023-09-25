@@ -4,6 +4,7 @@ import TextCenter from "@/app/components/TextCenter"
 import GridSystem from "@/app/components/GridSystem"
 import ColTwo from "@/app/components/ColTwo"
 import Swipper from "@/app/components/Swipper"
+import Footer from "@/app/components/Footer"
 
 
 const data_carausel = [
@@ -55,11 +56,11 @@ const welcome_data = [
 
 export default function page() {
     return (
-        <div>
+        <>
             <Navbar />
             <Carausel query_data={data_carausel} />
+            <div className="respons">
             <TextCenter data={"Tentang Kami"} />
-            <div className="ml-20 mr-20">
                 <div className="mt-10">
                     <GridSystem data_grid_system={data_grid_system} />
                 </div>
@@ -70,12 +71,9 @@ export default function page() {
                 <div className="welcome">
                     <ColTwo data_query={welcome_data} />
                 </div>
+                <Swipper />
             </div>
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-        </div>
+            <Footer />
+        </>
     )
 }

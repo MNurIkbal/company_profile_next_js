@@ -7,7 +7,7 @@ export function Carausel({query_data}) {
   return (
     <Carousel transition={{ duration: 2 }} >
       {query_data.map((query) => (
-      <div className="w-slider mt-style">
+      <div className="w-slider mt-style d-block">
         <img
           src={query.src}
           className="h-full w-full object-cover"
